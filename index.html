@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEONXIOMI — Monitor Xiaomi Original Pekanbaru</title>
+  <meta name="description" content="Toko monitor Xiaomi original di Pekanbaru. Pixel G24i, A24i, G27i, C27i, dan G34WQ dengan garansi resmi, harga terbaik, dan pengiriman se-Indonesia.">
+  <meta name="theme-color" content="#07030f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fx-noise" aria-hidden="true"></div>
+  <div class="fx-scanlines" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="fx-cursor" id="cursorGlow" aria-hidden="true"></div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="topbar-loc"><span class="ping"></span> PEKANBARU, RIAU • ONLINE 24/7</span>
+      <span class="topbar-right">GARANSI RESMI XIAOMI <i></i> GRATIS ONGKIR SE-PEKANBARU</span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" data-text="NEONXIOMI">NEON<span>XIOMI</span></a>
+
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#keunggulan" class="nav-link">KEUNGGULAN</a>
+        <a href="#produk" class="nav-link">PRODUK</a>
+        <a href="#galeri" class="nav-link">GALERI</a>
+        <a href="#toko" class="nav-link">TOKO</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#kontak" class="nav-link">KONTAK</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Buka keranjang">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.5L21 8H6.2"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <div class="hero-badge"><span class="square"></span> AUTHORIZED DISPLAY STORE • PEKANBARU</div>
+          <h1 class="hero-title glitch" data-text="MONITOR XIAOMI">MONITOR <span>XIAOMI</span></h1>
+          <p class="hero-sub">LEVEL UP YOUR <em>VISUAL</em> GAME.</p>
+          <p class="hero-desc">Monitor gaming &amp; produktivitas original Xiaomi dengan refresh rate hingga 165Hz, warna IPS yang jernih, dan garansi resmi. Langsung dari Pekanbaru untuk seluruh Indonesia.</p>
+          <p class="type-line"><span class="prompt">&gt;</span> <span id="typed"></span><span class="caret"></span></p>
+          <div class="hero-actions">
+            <a href="#produk" class="btn btn-primary"><span>LIHAT PRODUK</span><b>→</b></a>
+            <a href="#kontak" class="btn btn-ghost"><span>CHAT WHATSAPP</span></a>
+          </div>
+          <div class="hero-stats">
+            <div><strong data-count="1200" data-suffix="+">0</strong><span>PELANGGAN PUAS</span></div>
+            <div><strong data-count="6" data-suffix="">0</strong><span>MODEL TERSEDIA</span></div>
+            <div><strong data-count="100" data-suffix="%">0</strong><span>PRODUK ORIGINAL</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-1" aria-hidden="true"></div>
+          <div class="orbit orbit-2" aria-hidden="true"></div>
+          <div class="floating-tag tag-1"><span class="dot"></span> 165Hz READY</div>
+          <div class="floating-tag tag-2"><span class="dot cyan"></span> 1ms RESPONSE</div>
+          <div class="floating-tag tag-3"><span class="dot pink"></span> GARANSI RESMI</div>
+          <div class="monitor-mock hero-monitor" style="--accent:#b026ff;--glow:rgba(176,38,255,.45)">
+            <div class="monitor-screen">
+              <div class="screen-ui">
+                <div class="screen-top"><span class="screen-brand">XIAOMI</span><span class="screen-hz">165<span>HZ</span></span></div>
+                <div class="screen-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="screen-label">NEONXIOMI // DISPLAY SYSTEM</div>
+              </div>
+            </div>
+            <div class="monitor-neck"></div>
+            <div class="monitor-base"></div>
+          </div>
+          <div class="visual-caption">[ 01 / XIAOMI GAMING SERIES ]</div>
+        </div>
+      </div>
+      <a href="#keunggulan" class="scroll-hint" aria-label="Gulir ke bawah"><span>SCROLL</span><i></i></a>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>FULL HD IPS ✦ 165HZ REFRESH RATE ✦ 1MS RESPONSE ✦ GARANSI RESMI ✦ GRATIS ONGKIR PEKANBARU ✦ COD AVAILABLE ✦</span>
+        <span>FULL HD IPS ✦ 165HZ REFRESH RATE ✦ 1MS RESPONSE ✦ GARANSI RESMI ✦ GRATIS ONGKIR PEKANBARU ✦ COD AVAILABLE ✦</span>
+      </div>
+    </div>
+
+    <section class="section" id="keunggulan">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">// WHY NEONXIOMI</span>
+          <h2>KENAPA BELI DI <span>SINI?</span></h2>
+          <p>Bukan cuma jual monitor. Kami bantu kamu dapet layar yang pas buat kerja dan main.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><div class="feature-icon">01</div><h3>100% ORIGINAL</h3><p>Produk resmi Xiaomi, segel, dan bisa dicek serial number-nya. No KW, no abal-abal.</p><span class="card-line"></span></article>
+          <article class="feature-card reveal"><div class="feature-icon">02</div><h3>GARANSI RESMI</h3><p>Garansi resmi Indonesia. Kami bantu klaim kalau ada kendala pada unit kamu.</p><span class="card-line"></span></article>
+          <article class="feature-card reveal"><div class="feature-icon">03</div><h3>HARGA PEKANBARU</h3><p>Harga lokal yang bersaing, bisa COD di area kota Pekanbaru tanpa ribet.</p><span class="card-line"></span></article>
+          <article class="feature-card reveal"><div class="feature-icon">04</div><h3>KIRIM CEPAT</h3><p>Siap kirim ke seluruh Indonesia via kurir terpercaya dengan packing aman.</p><span class="card-line"></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="produk">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">// KATALOG PRODUK</span>
+          <h2>PILIH <span>MONITOR</span> MU</h2>
+          <p>Semua model Xiaomi favorit, siap kirim dari Pekanbaru.</p>
+        </div>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">SEMUA</button>
+          <button class="filter" data-filter="gaming">GAMING</button>
+          <button class="filter" data-filter="24">24 INCH</button>
+          <button class="filter" data-filter="27">27 INCH</button>
+          <button class="filter" data-filter="ultrawide">ULTRAWIDE</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card reveal" data-category="24" data-name="Xiaomi Monitor A24i" data-price="849000">
+            <div class="product-visual" style="--accent:#05d9e8;--glow:rgba(5,217,232,.4)">
+              <span class="tag-tag">HEMAT</span>
+              <img class="photo-slot product-photo" src="image/images.jpeg" alt="Xiaomi Monitor A24i" loading="lazy">
+              <div class="monitor-mock"><div class="monitor-screen"><div class="screen-ui"><div class="screen-top"><span class="screen-brand">XIAOMI</span><span class="screen-hz">100<span>HZ</span></span></div><div class="screen-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="screen-label">A24i // IPS DISPLAY</div></div></div><div class="monitor-neck"></div><div class="monitor-base"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">PRODUKTIVITAS • 24 INCH</span>
+              <h3>Xiaomi Monitor A24i</h3>
+              <p>23,8" IPS • FHD 1920×1080 • 100Hz • 6ms</p>
+              <div class="product-bottom"><div class="price"><small>Rp</small>849.000</div><button class="btn-add" aria-label="Tambah Xiaomi Monitor A24i">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="gaming 24" data-name="Xiaomi Monitor G24i" data-price="1099000">
+            <div class="product-visual" style="--accent:#ff2a6d;--glow:rgba(255,42,109,.4)">
+              <span class="tag-tag hot">BEST SELLER</span>
+              <img class="photo-slot product-photo" src="image/xiomi%20monitor%20g24i.jpeg" alt="Xiaomi Monitor G24i" loading="lazy">
+              <div class="monitor-mock"><div class="monitor-screen"><div class="screen-ui"><div class="screen-top"><span class="screen-brand">XIAOMI</span><span class="screen-hz">165<span>HZ</span></span></div><div class="screen-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="screen-label">G24i // GAMING MODE</div></div></div><div class="monitor-neck"></div><div class="monitor-base"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">GAMING • 24 INCH</span>
+              <h3>Xiaomi Monitor G24i</h3>
+              <p>23,8" IPS • FHD 1920×1080 • 165Hz • 1ms</p>
+              <div class="product-bottom"><div class="price"><small>Rp</small>1.099.000</div><button class="btn-add" aria-label="Tambah Xiaomi Monitor G24i">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="27" data-name="Xiaomi Monitor A27i" data-price="1149000">
+            <div class="product-visual" style="--accent:#b026ff;--glow:rgba(176,38,255,.4)">
+              <img class="photo-slot product-photo" src="image/xiomi%20monitor%2027i.jpeg" alt="Xiaomi Monitor A27i" loading="lazy">
+              <div class="monitor-mock"><div class="monitor-screen"><div class="screen-ui"><div class="screen-top"><span class="screen-brand">XIAOMI</span><span class="screen-hz">100<span>HZ</span></span></div><div class="screen-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="screen-label">A27i // WIDE VIEW</div></div></div><div class="monitor-neck"></div><div class="monitor-base"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">PRODUKTIVITAS • 27 INCH</span>
+              <h3>Xiaomi Monitor A27i</h3>
+              <p>27" IPS • FHD 1920×1080 • 100Hz • 6ms</p>
+              <div class="product-bottom"><div class="price"><small>Rp</small>1.149.000</div><button class="btn-add" aria-label="Tambah Xiaomi Monitor A27i">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="gaming 27" data-name="Xiaomi Monitor G27i" data-price="1399000">
+            <div class="product-visual" style="--accent:#00ffa3;--glow:rgba(0,255,163,.35)">
+              <span class="tag-tag hot">FAVORIT</span>
+              <img class="photo-slot product-photo" src="image/xiomi%20monitor%20g27i.jpeg" alt="Xiaomi Monitor G27i" loading="lazy">
+              <div class="monitor-mock"><div class="monitor-screen"><div class="screen-ui"><div class="screen-top"><span class="screen-brand">XIAOMI</span><span class="screen-hz">165<span>HZ</span></span></div><div class="screen-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="screen-label">G27i // GAMING MODE</div></div></div><div class="monitor-neck"></div><div class="monitor-base"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">GAMING • 27 INCH</span>
+              <h3>Xiaomi Monitor G27i</h3>
+              <p>27" IPS • FHD 1920×1080 • 165Hz • 1ms</p>
+              <div class="product-bottom"><div class="price"><small>Rp</small>1.399.000</div><button class="btn-add" aria-label="Tambah Xiaomi Monitor G27i">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="27" data-name="Xiaomi Monitor C27i" data-price="1699000">
+            <div class="product-visual" style="--accent:#ffd166;--glow:rgba(255,209,102,.35)">
+              <span class="tag-tag">USB-C 90W</span>
+              <img class="photo-slot product-photo" src="image/xiomi%20monitor%20c27i.jpeg" alt="Xiaomi Monitor C27i" loading="lazy">
+              <div class="monitor-mock"><div class="monitor-screen"><div class="screen-ui"><div class="screen-top"><span class="screen-brand">XIAOMI</span><span class="screen-hz">120<span>HZ</span></span></div><div class="screen-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="screen-label">C27i // CREATOR MODE</div></div></div><div class="monitor-neck"></div><div class="monitor-base"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">KREATOR • 27 INCH</span>
+              <h3>Xiaomi Monitor C27i</h3>
+              <p>27" IPS • FHD 1920×1080 • 120Hz • USB-C 90W</p>
+              <div class="product-bottom"><div class="price"><small>Rp</small>1.699.000</div><button class="btn-add" aria-label="Tambah Xiaomi Monitor C27i">+</button></div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="gaming ultrawide" data-name="Xiaomi Monitor G34WQ" data-price="3299000">
+            <div class="product-visual" style="--accent:#ff8a00;--glow:rgba(255,138,0,.4)">
+              <span class="tag-tag hot">ULTRAWIDE</span>
+              <img class="photo-slot product-photo" src="image/xiomi%20monitor%20g34wq.jpeg" alt="Xiaomi Monitor G34WQ" loading="lazy">
+              <div class="monitor-mock wide"><div class="monitor-screen"><div class="screen-ui"><div class="screen-top"><span class="screen-brand">XIAOMI</span><span class="screen-hz">165<span>HZ</span></span></div><div class="screen-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="screen-label">G34WQ // IMMERSIVE</div></div></div><div class="monitor-neck"></div><div class="monitor-base"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-cat">GAMING • 34 INCH ULTRAWIDE</span>
+              <h3>Xiaomi Monitor G34WQ</h3>
+              <p>34" VA Curved • UWQHD 3440×1440 • 165Hz • 1ms</p>
+              <div class="product-bottom"><div class="price"><small>Rp</small>3.299.000</div><button class="btn-add" aria-label="Tambah Xiaomi Monitor G34WQ">+</button></div>
+            </div>
+          </article>
+        </div>
+        <p class="product-note reveal">* Harga dapat berubah sewaktu-waktu. Konfirmasi stok &amp; harga terbaru via WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeri">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">// GALERI FOTO</span>
+          <h2>FOTO <span>TOKO &amp; PRODUK</span></h2>
+          <p>Lihat langsung monitor Xiaomi yang tersedia di NEONXIOMI Pekanbaru.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal"><img class="photo-slot" src="image/xiomi%20monitor%20g24i.jpeg" alt="Xiaomi Monitor G24i" loading="lazy"><figcaption>G24i • GAMING</figcaption></figure>
+          <figure class="gallery-item reveal"><img class="photo-slot" src="image/xiomi%20monitor%20g27i.jpeg" alt="Xiaomi Monitor G27i" loading="lazy"><figcaption>G27i • GAMING</figcaption></figure>
+          <figure class="gallery-item reveal"><img class="photo-slot" src="image/xiomi%20monitor%20g34wq.jpeg" alt="Xiaomi Monitor G34WQ" loading="lazy"><figcaption>G34WQ • ULTRAWIDE</figcaption></figure>
+          <figure class="gallery-item reveal"><img class="photo-slot" src="image/xiomi%20monitor%20c27i.jpeg" alt="Xiaomi Monitor C27i" loading="lazy"><figcaption>C27i • CREATOR</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="toko">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow">// ABOUT THE STORE</span>
+          <h2>TOKO MONITOR XIAOMI <span>DI PEKANBARU</span></h2>
+          <p>NEONXIOMI hadir buat kamu yang pengen upgrade tampilan tanpa harus nebak-nebak spesifikasi. Kami jualan monitor Xiaomi original dengan pelayanan yang ramah dan jujur — cocok buat gamer, desainer, mahasiswa, sampai kantor.</p>
+          <ul class="check-list">
+            <li>Bisa COD di area Pekanbaru</li>
+            <li>Bantu setting &amp; kalibrasi awal</li>
+            <li>Stok siap kirim setiap hari</li>
+            <li>Konsultasi gratis sebelum beli</li>
+          </ul>
+          <a href="#kontak" class="btn btn-primary"><span>KUNJUNGI TOKO</span><b>→</b></a>
+        </div>
+        <div class="about-panel reveal">
+          <div class="panel-head"><span class="panel-dot"></span> NEONXIOMI_HQ.PKB <span class="panel-x">×</span></div>
+          <div class="panel-body">
+            <div class="map-mock" aria-hidden="true">
+              <div class="map-road r1"></div><div class="map-road r2"></div><div class="map-road r3"></div>
+              <div class="map-pin"><span></span><small>PEKANBARU</small></div>
+              <span class="map-label l1">Jl. Sudirman</span><span class="map-label l2">Jl. Gatot Subroto</span>
+            </div>
+            <div class="store-info">
+              <div><small>ALAMAT</small><strong>Jl. Jenderal Sudirman No. 45, Pekanbaru</strong></div>
+              <div><small>JAM BUKA</small><strong>Senin–Sabtu, 09.00–21.00 WIB</strong></div>
+              <div><small>KONTAK</small><strong>0812-3456-7890</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">// TESTIMONI</span><h2>KATA <span>PELANGGAN</span></h2></div>
+        <div class="review-grid">
+          <article class="review-card reveal"><div class="stars">★★★★★</div><p>"Monitor G24i-nya oke banget, 165Hz buat main ML jadi jauh lebih enak. Barang segel, pengiriman cepat."</p><div class="reviewer"><span>R</span><div><strong>Rizky A.</strong><small>Pekanbaru</small></div></div></article>
+          <article class="review-card reveal"><div class="stars">★★★★★</div><p>"Beli A27i buat kerja, warnanya nyaman buat mata. Seller ramah dan bantu cek serial number juga."</p><div class="reviewer"><span>D</span><div><strong>Dewi P.</strong><small>Siak</small></div></div></article>
+          <article class="review-card reveal"><div class="stars">★★★★★</div><p>"Paling puas sama G34WQ. Ultrawide-nya beneran immersive. Recommended buat yang mau upgrade setup."</p><div class="reviewer"><span>A</span><div><strong>Andi N.</strong><small>Dumai</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="reveal"><span class="eyebrow">// FAQ</span><h2>PERTANYAAN <span>UMUM</span></h2><p>Masih bingung? Langsung chat aja, kami siap bantu.</p></div>
+        <div class="accordion reveal">
+          <div class="acc-item"><button class="acc-head">Apakah produk original dan bergaransi?<span>+</span></button><div class="acc-body"><p>Iya, semua monitor Xiaomi yang kami jual original segel dengan garansi resmi Indonesia. Serial number bisa dicek sendiri setelah barang sampai.</p></div></div>
+          <div class="acc-item"><button class="acc-head">Bisa COD di Pekanbaru?<span>+</span></button><div class="acc-body"><p>Bisa. Untuk area kota Pekanbaru tersedia layanan COD. Untuk luar kota, kami kirim via kurir dengan packing aman.</p></div></div>
+          <div class="acc-item"><button class="acc-head">Apakah harga sudah termasuk ongkir?<span>+</span></button><div class="acc-body"><p>Untuk area Pekanbaru kami gratis ongkir. Luar kota akan dihitungkan sesuai tarif kurir saat checkout.</p></div></div>
+          <div class="acc-item"><button class="acc-head">Bisa tukar barang kalau ada masalah?<span>+</span></button><div class="acc-body"><p>Tentu. Segera hubungi kami dengan video unboxing jika ada kendala, nanti kami bantu proses klaim garansi atau penukaran.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="kontak">
+      <div class="container cta-inner reveal">
+        <span class="eyebrow">// READY TO UPGRADE?</span>
+        <h2 class="glitch" data-text="LET'S BUILD YOUR SETUP">LET'S BUILD <span>YOUR SETUP</span></h2>
+        <p>Chat kami sekarang untuk cek stok, harga terbaru, dan promo COD di Pekanbaru.</p>
+        <a href="https://wa.me/6281234567890?text=Halo%20NEONXIOMI%2C%20saya%20mau%20tanya%20stok%20monitor%20Xiaomi." target="_blank" rel="noopener" class="btn btn-primary btn-lg"><span>CHAT WHATSAPP SEKARANG</span><b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><a href="#home" class="logo" data-text="NEONXIOMI">NEON<span>XIOMI</span></a><p>Monitor Xiaomi original untuk gamer dan kreator Pekanbaru.</p></div>
+      <div class="footer-links"><strong>MENU</strong><a href="#produk">Produk</a><a href="#galeri">Galeri</a><a href="#toko">Toko</a><a href="#faq">FAQ</a><a href="#kontak">Kontak</a></div>
+      <div class="footer-links"><strong>KONTAK</strong><span>0812-3456-7890</span><span>Jl. Jenderal Sudirman No. 45</span><span>Pekanbaru, Riau</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 NEONXIOMI PEKANBARU. ALL RIGHTS RESERVED.</span><span>DESIGNED WITH <b>♥</b> &amp; NEON</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja">
+    <div class="cart-head"><div><span class="eyebrow">// YOUR LOADOUT</span><h3>KERANJANG</h3></div><button id="closeCart" aria-label="Tutup keranjang">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="cart-empty">Keranjang masih kosong.<br><small>Yuk pilih monitormu!</small></p></div>
+    <div class="cart-foot"><div class="cart-total"><span>TOTAL</span><strong id="cartTotal">Rp 0</strong></div><button class="btn btn-primary" id="checkoutBtn"><span>CHECKOUT VIA WHATSAPP</span><b>↗</b></button></div>
+  </aside>
+
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
